@@ -24,8 +24,8 @@ local user_opts = {
     scalewindowed = 1.0,            -- scaling of the controller when windowed
     scalefullscreen = 1.0,          -- scaling of the controller when fullscreen
     scaleforcedwindow = 1.0,        -- scaling when rendered on a forced window
-    titlefontsize = 28,             -- the font size of the title text
-    vidscale = false,               -- scale the controller with the video?
+    titlefontsize = 30,             -- the font size of the title text
+    vidscale = true,                -- scale the controller with the video?
     hidetimeout = 1500,             -- duration in ms until the OSC hides if no
                                     -- mouse movement. enforced non-negative for the
                                     -- user, but internally negative is 'always-on'.
@@ -62,7 +62,7 @@ local user_opts = {
                                     -- differ (like with playing urls, audio or some media)
     showtitle = true,		        -- show title in OSC
     showdescription = true,         -- show video description on web videos
-    showwindowtitle = true,         -- show window title in borderless/fullscreen mode
+    showwindowtitle = false,        -- show window title in borderless/fullscreen mode
     showonpause = true,             -- whether to disable the hide timeout on pause
     thumbnailborder = 2,            -- the width of the thumbnail border
     raisesubswithosc = true,        -- whether to raise subtitles above the osc when it's shown
