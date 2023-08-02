@@ -2791,7 +2791,6 @@ mp.observe_property("chapter-list", "native", function(_, list) -- chapter list 
     request_init()
 end)
 
-mp.add_key_binding("TAB", 'get_chapterlist', function() show_message(get_chapterlist()) end)
 
 mp.observe_property('fullscreen', 'bool',
     function(name, val)
