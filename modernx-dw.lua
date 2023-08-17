@@ -18,7 +18,7 @@ local utils = require 'mp.utils'
 -- may change them in osc.conf
 local user_opts = {
     -- general settings --
-    language = 'en',		        -- en:English, chs:Chinese, pl:Polish, jp:Japanese
+    language = 'eng',		    -- eng:English, chs:Chinese
     welcomescreen = false,          -- show the mpv 'play files' screen upon open
     windowcontrols = 'auto',        -- whether to show OSC window controls, 'auto', 'yes' or 'no'
     showwindowed = true,            -- show OSC when windowed?
@@ -127,7 +127,7 @@ local icons = {
 
 -- Localization
 local language = {
-	['en'] = {
+	['eng'] = {
 	    welcome = '{\\fs24\\1c&H0&\\1c&HFFFFFF&}Drop files or URLs to play here.',  -- this text appears when mpv starts
 		off = 'OFF',
 		na = 'n/a',
@@ -155,58 +155,18 @@ local language = {
 		video = '视频',
 		audio = '音频',
 		subtitle = '字幕',
-        nosub = "没有字幕", -- please check these translations
-        noaudio = "不提供音轨", -- please check these translations
+        nosub = "无字幕", -- please check these translations
+        noaudio = "无音频", -- please check these translations
 		track = '：',
 		playlist = '播放列表',
 		nolist = '无列表信息',
 		chapter = '章节',
 		nochapter = '无章节信息',
-        ontop = '启用窗口停留在顶层',  -- please check these translations
-        ontopdisable = '禁用停留在顶层的窗口',  -- please check these translations
-        loopenable = '启用循环功能',
-        loopdisable = '禁用循环功能',
-	},
-	['pl'] = {
-	    welcome = '{\\fs24\\1c&H0&\\1c&HFFFFFF&}Upuść plik lub łącze URL do odtworzenia.',  -- this text appears when mpv starts
-		off = 'WYŁ.',
-		na = 'n/a',
-		none = 'nic',
-		video = 'Wideo',
-		audio = 'Audio',
-		subtitle = 'Napisy',
-        nosub = 'Brak dostępnych napisów', -- please check these translations
-        noaudio = 'Brak dostępnych ścieżek dźwiękowych', -- please check these translations
-		track = ' ścieżki:',
-		playlist = 'Lista odtwarzania',
-		nolist = 'Lista odtwarzania pusta.',
-		chapter = 'Rozdział',
-		nochapter = 'Brak rozdziałów.',
-        ontop = 'Przypnij okno do góry',
-        ontopdisable = 'Odepnij okno od góry',
-        loopenable = 'Włączenie zapętlenia',
-        loopdisable = 'Wyłączenie zapętlenia',
-	},
-    ['jp'] = {
-	    welcome = '{\\fs24\\1c&H0&\\1c&HFFFFFF&}ファイルやURLのリンクをここにドロップすると再生されます。',  -- this text appears when mpv starts
-		off = 'OFF',
-		na = 'n/a',
-		none = 'なし',
-		video = 'ビデオ',
-		audio = 'オーディオ',
-		subtitle = 'サブタイトル',
-        nosub = '字幕はありません',
-        noaudio = 'オーディオトラックはありません',
-		track = 'トラック:',
-		playlist = 'プレイリスト',
-		nolist = '空のプレイリスト.',
-		chapter = 'チャプター',
-		nochapter = '利用可能なチャプターはありません.',
-        ontop = 'ピンウィンドウをトップに表示',
-        ontopdisable = 'ウィンドウを上からアンピンする',
-        loopenable = 'ループON',
-        loopdisable = 'ループOFF',
-    }
+        ontop = '开启置顶',  -- please check these translations
+        ontopdisable = '关闭置顶',  -- please check these translations
+        loopenable = '开启循环',
+        loopdisable = '关闭循环',
+	}
 }
 -- read options from config and command-line
 opt.read_options(user_opts, 'modernx', function(list) update_options(list) end)
