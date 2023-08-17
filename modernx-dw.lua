@@ -6,7 +6,7 @@
 
 -- added some changes from dexeonify - https://github.com/dexeonify/mpv-config#difference-between-upstream-modernx
 
--- further fork by zydezu
+-- further fork by zydezu, diana7127
 
 local assdraw = require 'mp.assdraw'
 local msg = require 'mp.msg'
