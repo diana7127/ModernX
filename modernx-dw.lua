@@ -45,7 +45,7 @@ local user_opts = {
     showtitle = true,		        -- show title in OSC
     showdescription = true,         -- show video description on web videos
     showwindowtitle = false,        -- show window title in borderless/fullscreen mode
-    titleBarStrip = true,           -- whether to make the title bar a singular bar instead of a black fade
+    titleBarStrip = false,           -- whether to make the title bar a singular bar instead of a black fade
     dynamictitle = true,            -- change the title depending on if {media-title} and {filename} 
                                     -- differ (like with playing urls, audio or some media)
     font = 'mpv-osd-symbols',	    -- default osc font
